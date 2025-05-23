@@ -1,9 +1,79 @@
+# Node modules (pnpm, yarn, npm)
+node_modules/
+.pnpm/
+.yarn/
+.yarnrc.yml
 
-node_modules
-**/node_modules
-**/**/node_modules
-node_modules/**/*
-**/node_modules/**/*
-**/**/node_modules/**/*
+# Build output
+build/
+dist/
+.next/
+.vercel/
+.netlify/
+coverage/
 
+# Remix
+public/build/
+public/static/
 
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*.code-workspace
+
+# Misc
+*.local
+*.log
+*.pid
+*.seed
+*.tgz
+*.tmp
+
+# Test
+coverage/
+
+# Ignore lockfiles at root and in all subfolders
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+**/pnpm-lock.yaml
+**/yarn.lock
+**/package-lock.json
+
+# Ignore all node_modules everywhere
+**/node_modules/
+
+# Ignore build artifacts in all subfolders
+**/build/
+**/dist/
+**/.next/
+**/.vercel/
+**/.netlify/
+**/coverage/
+**/public/build/
+**/public/static/
+
+# Ignore .DS_Store and similar everywhere
+**/.DS_Store
+**/Thumbs.db
