@@ -1,0 +1,6 @@
+Auth Provider: Auth0
+
+- Role stored in user claims
+- Middleware in Remix to redirect based on role
+- Session stored via secure cookie
+

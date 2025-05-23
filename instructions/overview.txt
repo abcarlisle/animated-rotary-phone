@@ -1,0 +1,14 @@
+Project: Company Brain MVP - BOM-Centric System
+
+Focus:
+- Frontend: Remix (React-based)
+- Backend: AWS (CDK, DynamoDB, S3, Lambda)
+- Auth: Auth0
+
+Guiding Principles:
+- BOM is the core object; every role interacts with it.
+- Role-based forms and access controls.
+- Sleek, modern UI (Apple-style).
+- Idiot-proof with backend validations.
+- Customizable BOM imports per client.
+- Fast, seamless UX.

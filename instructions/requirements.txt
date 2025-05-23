@@ -1,0 +1,7 @@
+- Remix for frontend
+- AWS CDK for infrastructure
+- Auth0 for authentication
+- DynamoDB as primary database
+- Custom BOM import parser
+- S3 for import storage
+- EventBridge + Lambda for automation

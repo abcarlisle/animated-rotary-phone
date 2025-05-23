@@ -1,0 +1,14 @@
+UI Design:
+- Minimalist, clean, fast (Apple-style)
+- Mobile accessible (via responsive design)
+- Error states clearly shown
+- Tooltips or guidance for each field
+
+Form Design:
+- Autocomplete where possible
+- Smart defaults
+- Validation before submission
+
+Performance:
+- Preload data via loader()
+- Avoid spinners, show skeletons

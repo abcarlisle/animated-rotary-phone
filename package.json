@@ -1,0 +1,17 @@
+{
+  "name": "bomer-monorepo",
+  "private": true,
+  "packageManager": "pnpm@8.15.5",
+  "workspaces": [
+    "apps/frontend",
+    "apps/backend",
+    "infra",
+    "shared"
+  ],
+  "scripts": {
+    "build": "pnpm -r run build",
+    "dev": "pnpm -r run dev",
+    "test": "pnpm -r run test",
+    "lint": "pnpm -r run lint || true"
+  }
+}

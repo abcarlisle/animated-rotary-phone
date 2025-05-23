@@ -1,0 +1,24 @@
+Cloud: AWS
+Infra-as-Code: CDK
+
+Services:
+- API: AWS Lambda via API Gateway
+- Database: DynamoDB (BOM, Inventory, Orders, etc.)
+- Storage: S3 for BOM CAD exports
+- Auth: Auth0 (federated with Cognito if needed)
+- Jobs: Step Functions for workflows
+- Secrets: Parameter Store
+
+Design Goals:
+- Validate inputs before writes
+- Workflow logic based on role and BOM status
+- Track changes per part
+- Alerts for missing or suspicious data
+
+Implementation Notes:
+- Lambda functions to handle CRUD and import processing
+- DynamoDB as core datastore
+- S3 for uploading raw CAD BOM exports
+- EventBridge for triggering workflows
+- All backend logic checks for errors and optimizes step execution
+

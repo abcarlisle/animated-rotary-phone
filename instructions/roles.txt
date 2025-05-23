@@ -1,0 +1,60 @@
+Shipping/Receiving
+    View vendor list, BOMs, inventory levels, and existing orders
+    Receive incoming goods and update inventory quantities accordingly
+    Process outbound shipments: mark items as shipped, adjust inventory
+    Match received goods against POs
+    Confirm received quantities and identify discrepancies
+
+Purchase
+    View and edit BOMs to understand material requirements
+    View current inventory levels to avoid over-ordering
+    Create and manage purchase orders (POs) based on BOM and inventory needs
+    Track order status and delivery timelines
+    Manage pricing information for components and materials
+    Maintain and update vendor list (contact info, terms, reliability)
+
+Engineer
+    View current inventory to ensure BOMs reference valid, in-stock parts
+    Create new BOMs for new products or revisions
+    Modify existing BOMs to reflect design changes or improvements
+    Set and update target pricing for components in BOMs
+    Ensure engineering changes are communicated to manufacturing and purchasing
+
+Manufacturer
+    Log time spent on jobs or batches (for tracking labor and cost)
+    View required inventory for manufacturing tasks
+    Mark inventory as consumed during manufacturing
+    Update part numbers related to welding processes (e.g., substitute equivalent parts)
+    Report completion or issues with builds
+
+Paint
+    View items to be painted and their inventory status
+    Update inventory to reflect items entering/exiting the paint stage
+    Modify or assign part numbers related to paint specifications or finish types
+    Record completion of paint jobs and flag any issues
+
+Sales
+    View all unallocated finished goods that are ready to ship
+    Allocate inventory to customer orders based on availability and priority
+    View cost breakdowns to support quoting and profitability tracking
+    Access an order calendar to track upcoming shipments, due dates, and order statuses
+
+Technician
+    View a list of tasks assigned (e.g., builds, maintenance, inspections)
+    Access task-specific details including materials, procedures, and deadlines
+    Mark jobs as completed when done
+    Optionally provide comments or notes on completed work
+
+Manager
+    Assign tasks to technicians, manufacturers, or painters
+    Order parts as needed based on BOMs, demand, or inventory thresholds
+    Review and approve or reject purchase orders before sending to vendors
+    Oversee workflow progress and address bottlenecks
+
+Admin
+    Full access to all data and settings in the system
+    Import and export BOMs (e.g., from spreadsheets or other systems)
+    Manage global configurations such as permissions, system rules, and integrations
+    Troubleshoot issues across roles or departments
+
+All of these roles need to be linked through data

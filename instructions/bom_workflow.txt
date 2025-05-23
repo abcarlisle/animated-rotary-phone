@@ -1,0 +1,12 @@
+Core Object: BOM
+
+Roles:
+- Shipping/Receiving: Read BOM, check inventory
+- Purchasing: Add PO, read vendors, BOM access
+- Engineer: Add/change BOM, price entry
+- Manufacturing: Combine parts, update inventory
+- Paint: Update part status
+- Sales: Allocate inventory, read cost
+- Boss: Approvals on threshold
+
+Forms are role-specific. BOMs drive data structure and UI.

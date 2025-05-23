@@ -1,0 +1,54 @@
+## Core Tables
+
+### 1. `BOM`
+- `id`: UUID
+- `product_name`: string
+- `revision`: string
+- `components`: array of {part_number, quantity, version, notes}
+- `created_by`: user_id
+- `created_at`: timestamp
+- `documents`: array of file references
+
+### 2. `Inventory`
+- `part_number`: string (FK to BOM component)
+- `description`: string
+- `quantity`: number
+- `location`: string
+- `status`: enum(raw, welded, painted, finished)
+
+### 3. `PO` (Purchase Order)
+- `id`: UUID
+- `vendor_id`: FK to Vendors
+- `items`: array of {part_number, quantity, price}
+- `status`: enum(draft, submitted, received, cancelled)
+- `created_by`: user_id
+- `created_at`: timestamp
+
+### 4. `WorkOrder`
+- `id`: UUID
+- `task_type`: enum(weld, paint, assemble)
+- `bom_id`: FK to BOM
+- `part_number`: FK to Inventory
+- `assigned_to`: user_id
+- `status`: enum(pending, in_progress, done)
+- `time_entries`: array of {user_id, clock_in, clock_out}
+
+### 5. `Users`
+- `id`: UUID
+- `name`: string
+- `role`: enum(shipper, purchaser, engineer, manufacturer, painter, sales, boss)
+- `active`: boolean
+
+### 6. `Orders`
+- `id`: UUID
+- `customer_id`: FK
+- `items`: array of {part_number, quantity}
+- `status`: enum(quote, confirmed, shipped)
+- `shipping_date`: date
+- `allocated_inventory`: array of part_numbers
+
+### 7. `Vendors`
+- `id`: UUID
+- `name`: string
+- `lead_time`: days
+- `parts_supplied`: array of part_numbers

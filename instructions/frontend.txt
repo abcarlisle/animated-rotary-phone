@@ -1,0 +1,20 @@
+Use Remix for SSR and fast UX
+Auth0 integration for all routes
+Each role has its own form interface
+Responsive, Apple-like design: sleek, modern, whitespace
+Forms are minimal, pre-filled where possible
+Inputs support dynamic fields from custom BOMs
+
+
+Key Features:
+- Server-side form actions
+- Nested layouts and routing
+- TypeScript for safety
+- Tailwind CSS + shadcn/ui for styling
+- Role-based pages
+- Minimal JS, fast UX
+
+Implementation Notes:
+- Each role has their own route (e.g. /ship, /engineer)
+- Forms handled via Remix actions
+- Use loader() to preload BOM data per role

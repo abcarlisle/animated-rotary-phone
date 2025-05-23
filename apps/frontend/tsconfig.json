@@ -1,0 +1,10 @@
+{
+  "extends": "./node_modules/@remix-run/dev/tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@shared/*": ["../../shared/*"]
+    }
+  }
+}

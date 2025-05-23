@@ -1,0 +1,4 @@
+- Validate all BOM imports before processing
+- Backend catches and logs all parsing/import errors
+- Workflow automation checks for missing data or invalid states
+- Alert user with clear message and retry instructions

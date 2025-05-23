@@ -1,0 +1,8 @@
+BOM Import:
+- Accept CAD exports (CSV, XLSX, etc.)
+- Each company has their own BOM CAD export
+- Parse file and auto-detect fields like part number, quantity, description
+- If format is unclear, prompt user to map columns
+- Save mappings per company, Save template config for that company
+- Upload to S3
+- Fail gracefully and ask for help if parsing fails
